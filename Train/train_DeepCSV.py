@@ -27,10 +27,10 @@ train.compileModel(learningrate=0.003,
 print(train.keras_model.summary())
 #printLayerInfosAndWeights(train.keras_model)
 
-model,history = train.trainModel(nepochs=50,
+model,history = train.trainModel(nepochs=750,
                                  batchsize=10000, 
                                  stop_patience=300, 
-                                 lr_factor=0.5, 
+                                 lr_factor=0.005, 
                                  lr_patience=-1, 
                                  lr_epsilon=0.0001, 
                                  lr_cooldown=10, 
